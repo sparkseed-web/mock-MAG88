@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/* common */
+
+.text {
+    font-size: 16px;
+    letter-spacing: -2px;
+    
+}
+
+.inner-top1 .text, .inner-top2 .text {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 24px;
+}
+
+main .title {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, .submit:hover {
+    opacity: 0.5;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 2040px;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    
+}
+
+.inner-top {
+    
+    padding-top: 120px;
+}
+
+.inner-top p {
+    padding: 20px 0 60px 0;
+}
+
+.inner-top1 .text, .inner-top2 .text{
+    margin-top: 20px;
+}
+
+
+
+/* main */
+
+.main-visual-1 {
+    width: 100%;
+    height: calc(100vh);
+    object-fit: cover;
+}
+
+.main-visual {
+    position: relative;
+}
+
+.head-logo {
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+
+p {
+
+    letter-spacing: -2px;
+}
+
+
+.container:nth-of-type(2) {
+    padding: 70px 0 85px 0;
+}
+
+.photo {
+    display: flex;
+    justify-content:space-between;
+}
+
+.photo img {
+    width: 100%;
+    height:490px;
+}
+
+.photo .item {
+    width: 49%;
+}
+
+.photo .item:first-of-type {
+    margin-top: 37px;
+}
+
+.photo .item:last-of-type{  
+    margin-top: 37px;
+}
+
+.photo a {
+
+    position: relative;
+}
+
+.archive {
+    width: px;
+}
+
+.white-title {
+    text-align: center;
+    width: 290px;
+    color: white;
+    padding: 10px 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-title h2 {
+    /* font-size: 35px; */
+}
+
+.white-title .text {
+
+    font-weight: bold;
+}
+
+.fashion {
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/ioana-ye-4pEQF8AwQZ4-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.inner-fashion {
+    position: absolute;
+    top: 50px;
+}
+
+.fashion .title {
+    padding-top: 60px;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    padding: 12px 35px;
+    font-size: 13px;
+    border: 1px solid black;
+}
+
+.submit {
+    text-align: center;
+}
+
+.antique-catalog-container {
+    background-color: rgba(184, 182, 182, 0.164);
+    margin-top: 90px;
+    padding-bottom: 60px;
+    line-height: 1.4;
+}
+
+
+
+.antique,
+.catalog {
+    display: flex;
+    align-items: center;
+}
+
+.antique {
+    margin-top: 50px;
+}
+
+.catalog img,
+.antique img {
+    width: 48%;
+    padding-top: 70px;
+}
+.catalog .figcaption {
+    padding-left: 45px;
+}
+
+.antique .figcaption {
+    padding-right: 45px;
+}
+
+.figcaption h2 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.figcaption {
+    /* align-items: center; */
+}
+
+.figcaption .text {
+    margin-bottom: 30px;
+}
+/* footer */
+
+footer{    
+    background-color: rgba(39, 39, 39, 0.938);
+}
+
+.footer-text {
+    letter-spacing: -2px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.footer-contents {
+    /* height: 450px; */
+    display: flex;
+    align-items: flex-start;
+    color: white;
+}
+
+
+.footer-content {
+    width: calc(100%/3);
+    /* margin: 0 auto; */
+    text-align: left;
+    padding: 110px 0 110px 0;    
+    /* padding: 200px 0; */
+}
+
+.footer-content:first-child{
+    align-self: center;
+}
+
+.footer-content:last-child {
+    /* padding-top: -100px; */
+}
+
+footer li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.footer-texts {
+    margin-top: 20px;
+}
+
+.small {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* レスポンシブ */
+
+@media (max-width:897px) {
+    .inner {
+        padding: 0 40px;
+    }
+
+    .photo {
+        flex-direction: column;
+        
+    }
+
+.photo img {
+    height: 780px;
+}
+
+    .photo .item {
+        width: 100%;
+    }
+
+    .photo a:first-child {
+        margin-right: 0px;
+    }
+
+    .white-title {
+        position: absolute;
+    }
+    
+    .fashion {
+        height: 500px;
+    }
+
+    .catalog img,
+    .antique img {
+    padding-top: 30px;
+}
+
+.antique-catalog-container {
+    padding-bottom: 0;
+}
+
+.antique-catalog-container h2 {
+    margin-top: 0;
+}
+.antique,
+    .catalog {
+        display: block;
+    }
+
+    .antique {
+        margin-top: 0;
+    }
+
+    .antique .figcaption {
+        padding-right: 0;
+    }
+
+    .catalog .figcaption {
+        padding: 0;
+    }
+
+
+    .catalog {
+        margin-top: 100px;
+        padding-top: 0px;
+    }
+
+
+    .figcaption h2 {
+        padding-top: 60px;
+    }
+
+    .figcaption .text:last-child {
+        margin-bottom: 0;
+    }
+
+    .catalog img,
+    .antique img {
+        width: 100%;
+    }
+
+    .antique img {
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+
+
+    .antique.figcaption {
+        padding-right: 0;
+    }
+
+    .footer-content {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .footer-content:nth-child(2) {
+        padding-bottom: 30px;
+    }
+
+    .footer-contents {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-content:first-child {
+        text-align: center;
+        padding-top: 40px;
+
+    }
+
+}
